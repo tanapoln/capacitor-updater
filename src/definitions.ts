@@ -226,6 +226,7 @@ declare module '@capacitor/cli' {
       /**
        * Configure the plugin to keep the URL path after a reload.
        * WARNING: When a reload is triggered, 'window.history' will be cleared.
+       * Android only: iOS ignores this option, since keeping the path required a private WebKit method that App Review rejects.
        *
        * @default false
        * @since  6.8.0
